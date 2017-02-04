@@ -16,7 +16,6 @@
     <link rel="stylesheet" type="text/css" href="static/css/font-awesome-4.7.0.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/animate-2017-01-19.css">
     <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="static/js/circle-progress.min.js"></script>
     <!-- widget -->
     <link rel="stylesheet" type="text/css" href="static/css/index.css">
     <script type="text/javascript" src="static/js/index.js"></script>
@@ -33,36 +32,85 @@
               <header id="title" class="card-header">
                 <p class="card-header-title">Tic Tac Toe Widget</p>
                 <a class="card-header-icon">
-                  <i class="fa fa-clock-o"></i>
+                  <i class="fa fa-empire"></i>
                 </a>
               </header>
-              <div id="display" class="card-content">
-                <div id="bg" class="is-stretch is-centered">
-                  <div id="progress">
-                    <strong></strong>
+              <div id="game" class="card-content is-centered">
+
+                <div id="game-board" class="square">
+                  <div class="overlay">
+                    <div class="columns is-multiline is-mobile is-stretch">
+                      <div class="column is-one-third">
+                        <a id="board-1" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                      </div>
+                      <div class="column is-one-third">
+                        <a id="board-2" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                      </div>
+                      <div class="column is-one-third">
+                        <a id="board-3" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                      </div>
+                      <div class="column is-one-third">
+                        <a id="board-4" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                      </div>
+                      <div class="column is-one-third">
+                        <a id="board-5" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                      </div>
+                      <div class="column is-one-third">
+                        <a id="board-6" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                      </div>
+                      <div class="column is-one-third">
+                        <a id="board-7" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                      </div>
+                      <div class="column is-one-third">
+                        <a id="board-8" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                      </div>
+                      <div class="column is-one-third">
+                        <a id="board-9" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div id="overlay" class="is-stretch is-centered">
-                  <div id="input-box" class="is-centered">
-                    <div class="splitter">
-                      <input id="input-work" class="input" type="text" value="25" maxlength="2">
-                      <p class="desc">Work</p>
-                    </div>
-                    <div class="splitter">
-                      <input id="input-play" class="input" type="text" value="05" maxlength="2">
-                      <p class="desc">Play</p>
-                    </div>
-                  </div>
-                  <div id="buttons">
-                    <a id="btn-play" class="button is-white">
-                      <i class="fa fa-play"></i>
+
+              </div>
+              <footer id="status" class="card-footer">
+                <div class="columns is-mobile is-stretch">
+                  <div class="column is-one-quarter">
+                    <a id="back">
+                      <i class="fa fa-chevron-left"></i>&nbsp;
                     </a>
                   </div>
+                  <div class="column is-6 has-text-centered">
+                    <p id="message" class="tiny">
+                      Player 1's Turn
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <footer id="counter" class="card-footer is-centered">
-                <!-- Tomato icons here -->
               </footer>
+              <div id="dash" class="card-content is-centered">
+
+                <div id="dash-score" class="is-centered">
+                  <div id="p1" class="score-box is-centered">
+                    <p class="player tiny">
+                      Player 1
+                    </p>
+                    <div class="score">
+                      00
+                    </div>
+                  </div>
+                  <p class="tiny">
+                    vs
+                  </p>
+                  <div id="p2" class="score-box is-centered">
+                    <p class="player tiny">
+                      Player 2
+                    </p>
+                    <div class="score">
+                      00
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
             <div class="card">
               <footer class="card-footer"> <a class="card-footer-item" href="https://htko.ca/project/code/fcc/pomodoro-clock-widget/README/">Portfolio</a> <a class="card-footer-item" href="https://github.com/htko89/fcc-pomodoro-clock-widget">GitHub</a> </footer>

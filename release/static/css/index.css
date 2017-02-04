@@ -26,74 +26,73 @@ body, html {
   background-color: #f5f5f5;
 }
 
+#dash {
+  padding: 1rem;
+}
 
-/*display*/
-
-#display {
-  height: 19rem;
+.square {
   position: relative;
+  width: 100%;
 }
 
-#display #progress{
-  margin-top: 0.5rem;
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
-#display #overlay {
+.overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
-#display #input-box {
-  margin-top: 2rem;
-}
-#display .splitter {
-  width: 5rem;
-}
-
-#display .desc {
-  text-align: center;
+.tiny {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
 
-#display .input {
+
+/*Game*/
+
+#game-board .columns {
+  margin: 0;
+}
+
+#game-board .column {
+  height: 33%;
+}
+#game-board .button {
+  height: 100%;
   width: 100%;
-  height: auto;
+  padding: 1rem;
+}
+
+
+/*status*/
+
+#status {
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+#status #back {
+  line-height: 0.8rem;
+  margin-bottom: -0.2rem;
+}
+
+#status #message {
+}
+
+/*Dash*/
+
+#dash-score .score-box {
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+#dash-score .score {
   line-height: 1;
-  border: 0;
-  box-shadow: none;
-  text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
-  padding: 0;
   font-size: 4rem;
-  background: none;
-}
-
-#input-play {
-  color: #7a7a7a;
-}
-
-
-/*controls*/
-
-#buttons {
-  margin-top: 1rem;
-}
-#buttons .button {
-  color: #f44336;
-}
-
-/*counter*/
-
-#counter {
-  padding: 1rem;
-  height: 3rem;
-}
-
-#counter .tomato{
-  height: 1rem;
-  margin: 0 0.5rem;
 }
