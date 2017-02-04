@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metadata -->
+    <title>Tic Tac Toe Widget</title>
+    <meta name="description" content="Free Code Camp Project - Tic Tac Toe Widget">
+    <meta name="author" content="Tony Ko">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <!-- <link rel="icon" href=".png"> -->
+    <!-- external -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300|Roboto+Condensed:100,300">
+    <!-- libraries -->
+    <link rel="stylesheet" type="text/css" href="static/css/bulma-0.3.1.css">
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/animate-2017-01-19.css">
+    <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="static/js/circle-progress.min.js"></script>
+    <!-- widget -->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css">
+    <script type="text/javascript" src="static/js/index.js"></script>
+    <!-- end -->
+  </head>
+  <body>
+
+    <!-- widget container -->
+    <section id="main" class="section is-stretch">
+      <div class="container is-stretch">
+        <div id="columns" class="columns is-mobile is-stretch is-centered is-gapless">
+          <div class="column is-12-mobile is-one-quarter-tablet is-one-third-desktop">
+            <div id="app" class="card">
+              <header id="title" class="card-header">
+                <p class="card-header-title">Tic Tac Toe Widget</p>
+                <a class="card-header-icon">
+                  <i class="fa fa-clock-o"></i>
+                </a>
+              </header>
+              <div id="display" class="card-content">
+                <div id="bg" class="is-stretch is-centered">
+                  <div id="progress">
+                    <strong></strong>
+                  </div>
+                </div>
+                <div id="overlay" class="is-stretch is-centered">
+                  <div id="input-box" class="is-centered">
+                    <div class="splitter">
+                      <input id="input-work" class="input" type="text" value="25" maxlength="2">
+                      <p class="desc">Work</p>
+                    </div>
+                    <div class="splitter">
+                      <input id="input-play" class="input" type="text" value="05" maxlength="2">
+                      <p class="desc">Play</p>
+                    </div>
+                  </div>
+                  <div id="buttons">
+                    <a id="btn-play" class="button is-white">
+                      <i class="fa fa-play"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <footer id="counter" class="card-footer is-centered">
+                <!-- Tomato icons here -->
+              </footer>
+            </div>
+            <div class="card">
+              <footer class="card-footer"> <a class="card-footer-item" href="https://htko.ca/project/code/fcc/pomodoro-clock-widget/README/">Portfolio</a> <a class="card-footer-item" href="https://github.com/htko89/fcc-pomodoro-clock-widget">GitHub</a> </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
