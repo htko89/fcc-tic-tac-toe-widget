@@ -26,70 +26,96 @@
     <!-- widget container -->
     <section id="main" class="section is-stretch">
       <div class="container is-stretch">
-        <div id="columns" class="columns is-mobile is-stretch is-centered is-gapless">
-          <div class="column is-12-mobile is-one-quarter-tablet is-one-third-desktop">
-            <div id="app" class="card">
+        <div class="columns is-mobile is-stretch is-centered is-gapless">
+          <div id="app" class="column is-12">
+            <div id="app-card" class="card">
               <header id="title" class="card-header">
+
                 <p class="card-header-title">Tic Tac Toe Widget</p>
                 <a class="card-header-icon">
-                  <i class="fa fa-empire"></i>
+                  <i class="fa fa-gamepad"></i>
                 </a>
+
               </header>
               <div id="game" class="card-content is-centered">
 
-                <div id="game-board" class="square">
+                <div id="game-intro" class="square hidden">
+                  <div class="overlay is-centered">
+                    <img class="animated" src="static/img/x.svg">
+                    <img class="animated" src="static/img/o.svg">
+                  </div>
+                </div>
+
+                <div id="game-board" class="square hidden">
                   <div class="overlay">
                     <div class="columns is-multiline is-mobile is-stretch">
                       <div class="column is-one-third">
-                        <a id="board-1" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                        <a id="0" class="button is-white"></a>
                       </div>
                       <div class="column is-one-third">
-                        <a id="board-2" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                        <a id="1" class="button is-white"></a>
                       </div>
                       <div class="column is-one-third">
-                        <a id="board-3" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                        <a id="2" class="button is-white"></a>
                       </div>
                       <div class="column is-one-third">
-                        <a id="board-4" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                        <a id="3" class="button is-white"></a>
                       </div>
                       <div class="column is-one-third">
-                        <a id="board-5" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                        <a id="4" class="button is-white"></a>
                       </div>
                       <div class="column is-one-third">
-                        <a id="board-6" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                        <a id="5" class="button is-white"></a>
                       </div>
                       <div class="column is-one-third">
-                        <a id="board-7" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                        <a id="6" class="button is-white"></a>
                       </div>
                       <div class="column is-one-third">
-                        <a id="board-8" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                        <a id="7" class="button is-white"></a>
                       </div>
                       <div class="column is-one-third">
-                        <a id="board-9" class="button is-info"><i class="fa fa-times fa-4x"></i></a>
+                        <a id="8" class="button is-white"></a>
                       </div>
                     </div>
                   </div>
                 </div>
 
               </div>
-              <footer id="status" class="card-footer">
-                <div class="columns is-mobile is-stretch">
-                  <div class="column is-one-quarter">
+              <div id="status" class="card-content is-centered">
+
+                <div class="columns is-mobile is-stretch is-gapless">
+                  <div class="column is-3">
                     <a id="back">
-                      <i class="fa fa-chevron-left"></i>&nbsp;
+                      <!-- <i class="fa fa-chevron-left"></i>&nbsp; -->
                     </a>
                   </div>
                   <div class="column is-6 has-text-centered">
                     <p id="message" class="tiny">
-                      Player 1's Turn
+
                     </p>
                   </div>
+                  <div class="column is-3">
+
+                  </div>
                 </div>
-              </footer>
+
+              </div>
               <div id="dash" class="card-content is-centered">
 
-                <div id="dash-score" class="is-centered">
-                  <div id="p1" class="score-box is-centered">
+                <div id="dash-select" class="is-centered hidden">
+                  <div id="p1" class="dash-box is-centered">
+                    <a id="p1-human" class="button tiny animate is-active">Human</a>
+                    <a id="p1-computer" class="button animate tiny">Computer</a>
+                  </div>
+                  <a id="go" class="button tiny">Go</a>
+                  <div id="p2" class="dash-box is-centered">
+                    <a id="p2-human" class="button animate tiny">Human</a>
+                    <a id="p2-computer" class="button animate tiny is-active">Computer</a>
+                  </div>
+                </div>
+
+                <div id="dash-score" class="is-centered hidden">
+                  <div id="p1" class="dash-box is-centered">
                     <p class="player tiny">
                       Player 1
                     </p>
@@ -100,7 +126,7 @@
                   <p class="tiny">
                     vs
                   </p>
-                  <div id="p2" class="score-box is-centered">
+                  <div id="p2" class="dash-box is-centered">
                     <p class="player tiny">
                       Player 2
                     </p>
