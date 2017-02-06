@@ -29,6 +29,9 @@ var players = {
 };
 var turn = 1;
 var outcome = 0;
+var playSound = new Audio( "static/audio/KeypressStandard.ogg" );
+var drawSound = new Audio( "static/audio/Ceres.ogg" );
+var winSound = new Audio( "static/audio/Io.ogg" );
 
 
 /*****************************************************************************************************
@@ -76,6 +79,7 @@ function placeKey( space, turn ) {
   } else {
     $( "#game #board #" + space ).html( "" );
   }
+  playSound.play();
 }
 
 function setScore( turn ) {
@@ -169,9 +173,10 @@ $( document ).ready( function() {
       outcome = evalOutcome( turn );
       if ( outcome === 1 ) {
         setMessage( "Player " + turn + " Wins!" );
-
+        winSound.play();
       } else if ( outcome === 2 ) {
         setMessage( "Draw!" );
+        drawSound.play();
       }
       turn = ( turn === 1 ? 2 : 1 );
       if ( players[ turn ][ "type" ] === "computer" ) { // launch turn if computer
