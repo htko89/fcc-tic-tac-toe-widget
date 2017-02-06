@@ -39,13 +39,13 @@
               </header>
               <div id="game" class="card-content is-wrapper">
 
-                <div id="intro" class="is-overlay dead is-centered">
+                <div id="intro" class="is-overlay hidden dead is-centered">
                   <img class="animated bounceIn" src="static/img/x.svg">
                   <img class="animated bounceIn" src="static/img/o.svg">
                 </div>
 
 
-                <div id="board" class="is-overlay is-centered dead">
+                <div id="board" class="is-overlay is-centered hidden dead">
                   <div class="columns is-multiline is-mobile is-stretch">
                     <div class="column is-one-third">
                       <a id="0" class="button is-white"></a>
@@ -92,19 +92,19 @@
               </div>
               <div id="dash" class="card-content is-wrapper ">
 
-                <div id="select" class="is-overlay is-centered tiny animated pulse dead">
+                <div id="select" class="is-overlay is-centered tiny hidden dead">
                   <div id="p1" class="dash-box is-centered">
                     <a id="p1-human" class="button is-active">Human</a>
                     <a id="p1-computer" class="button">Computer</a>
                   </div>
-                  <a id="go" class="button">Go</a>
+                  <a id="go" class="button is-primary">Go</a>
                   <div id="p2" class="dash-box is-centered">
                     <a id="p2-human" class="button">Human</a>
                     <a id="p2-computer" class="button is-active">Computer</a>
                   </div>
                 </div>
 
-                <div id="score" class="is-overlay is-centered animated pulse dead">
+                <div id="score" class="is-overlay is-centered animated pulse hidden dead">
                   <div id="p1" class="dash-box is-centered">
                     <p class="player tiny">
                       Player 1
