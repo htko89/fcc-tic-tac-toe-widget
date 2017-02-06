@@ -28,7 +28,7 @@
       <div class="container is-stretch">
         <div class="columns is-mobile is-stretch is-centered is-gapless">
           <div id="app" class="column is-12">
-            <div id="app-card" class="card">
+            <div id="app-card" class="card transition">
               <header id="title" class="card-header">
 
                 <p class="card-header-title">Tic Tac Toe Widget</p>
@@ -37,84 +37,74 @@
                 </a>
 
               </header>
-              <div id="game" class="card-content is-centered">
+              <div id="game" class="card-content is-wrapper">
 
-                <div id="game-intro" class="square hidden">
-                  <div class="overlay is-centered">
-                    <img class="animated" src="static/img/x.svg">
-                    <img class="animated" src="static/img/o.svg">
-                  </div>
+                <div id="intro" class="is-overlay dead is-centered">
+                  <img class="animated bounceIn" src="static/img/x.svg">
+                  <img class="animated bounceIn" src="static/img/o.svg">
                 </div>
 
-                <div id="game-board" class="square hidden">
-                  <div class="overlay">
-                    <div class="columns is-multiline is-mobile is-stretch">
-                      <div class="column is-one-third">
-                        <a id="0" class="button is-white"></a>
-                      </div>
-                      <div class="column is-one-third">
-                        <a id="1" class="button is-white"></a>
-                      </div>
-                      <div class="column is-one-third">
-                        <a id="2" class="button is-white"></a>
-                      </div>
-                      <div class="column is-one-third">
-                        <a id="3" class="button is-white"></a>
-                      </div>
-                      <div class="column is-one-third">
-                        <a id="4" class="button is-white"></a>
-                      </div>
-                      <div class="column is-one-third">
-                        <a id="5" class="button is-white"></a>
-                      </div>
-                      <div class="column is-one-third">
-                        <a id="6" class="button is-white"></a>
-                      </div>
-                      <div class="column is-one-third">
-                        <a id="7" class="button is-white"></a>
-                      </div>
-                      <div class="column is-one-third">
-                        <a id="8" class="button is-white"></a>
-                      </div>
+
+                <div id="board" class="is-overlay is-centered dead">
+                  <div class="columns is-multiline is-mobile is-stretch">
+                    <div class="column is-one-third">
+                      <a id="0" class="button is-white"></a>
+                    </div>
+                    <div class="column is-one-third">
+                      <a id="1" class="button is-white"></a>
+                    </div>
+                    <div class="column is-one-third">
+                      <a id="2" class="button is-white"></a>
+                    </div>
+                    <div class="column is-one-third">
+                      <a id="3" class="button is-white"></a>
+                    </div>
+                    <div class="column is-one-third">
+                      <a id="4" class="button is-white"></a>
+                    </div>
+                    <div class="column is-one-third">
+                      <a id="5" class="button is-white"></a>
+                    </div>
+                    <div class="column is-one-third">
+                      <a id="6" class="button is-white"></a>
+                    </div>
+                    <div class="column is-one-third">
+                      <a id="7" class="button is-white"></a>
+                    </div>
+                    <div class="column is-one-third">
+                      <a id="8" class="button is-white"></a>
                     </div>
                   </div>
                 </div>
 
               </div>
-              <div id="status" class="card-content is-centered">
+              <div id="status" class="card-content is-wrapper">
 
-                <div class="columns is-mobile is-stretch is-gapless">
+                <div class="columns is-mobile is-stretch is-gapless tiny">
                   <div class="column is-3">
-                    <a id="back">
-                      <!-- <i class="fa fa-chevron-left"></i>&nbsp; -->
-                    </a>
+                    <a id="back"><i class="fa fa-chevron-left"></i></a>
                   </div>
                   <div class="column is-6 has-text-centered">
-                    <p id="message" class="tiny">
-
-                    </p>
-                  </div>
-                  <div class="column is-3">
-
+                    <p id="message"></p>
                   </div>
                 </div>
 
               </div>
-              <div id="dash" class="card-content is-centered">
+              <div id="dash" class="card-content is-wrapper ">
 
-                <div id="dash-select" class="is-centered hidden">
+                <div id="select" class="is-overlay is-centered tiny animated pulse dead">
                   <div id="p1" class="dash-box is-centered">
-                    <a id="p1-human" class="button tiny animate is-active">Human</a>
-                    <a id="p1-computer" class="button animate tiny">Computer</a>
+                    <a id="p1-human" class="button is-active">Human</a>
+                    <a id="p1-computer" class="button">Computer</a>
                   </div>
-                  <a id="go" class="button tiny">Go</a>
+                  <a id="go" class="button">Go</a>
                   <div id="p2" class="dash-box is-centered">
-                    <a id="p2-human" class="button animate tiny">Human</a>
-                    <a id="p2-computer" class="button animate tiny is-active">Computer</a>
+                    <a id="p2-human" class="button">Human</a>
+                    <a id="p2-computer" class="button is-active">Computer</a>
                   </div>
                 </div>
 
-                <div id="dash-score" class="is-centered hidden">
+                <div id="score" class="is-overlay is-centered animated pulse dead">
                   <div id="p1" class="dash-box is-centered">
                     <p class="player tiny">
                       Player 1
