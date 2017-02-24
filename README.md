@@ -1,22 +1,20 @@
 ---
-type: project
-draft: false
-date: '2017-02-06'
 title: Tic Tac Toe Widget
-topics:
-  - code
-tools:
-  - bulma
-  - jquery
+date: '2017-02-06'
 link: 'https://htkoca.github.io/fcc-tic-tac-toe-widget/release/'
 code: 'https://github.com/htkoca/fcc-tic-tac-toe-widget'
 program: 01 - Front End Development Certification
 course: 12 - Advanced Front End Development Projects
 project: 03 - Build a Tic Tac Toe Game
+categories:
+  - code
+tags:
+  - bulma
+  - jquery
+cover: cover.jpg
 photos:
   - mockup-mobile-m.jpg
   - mockup-mobile-game-m.jpg
-path: code/fcc/tic-tac-toe-widget
 ---
 # Student Project - Free Code Camp
 Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/KzXQgy/.
